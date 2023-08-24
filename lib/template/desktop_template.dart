@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_flutter/organisms/side_bar.dart';
 
 class DesktopTemplate extends StatelessWidget {
   const DesktopTemplate({super.key});
@@ -6,7 +7,9 @@ class DesktopTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text('hello im desktop siize'),
+      // backgroundColor: Colors.black,
+      body: SideBar(),
     );
-  }
 }
+}
+
