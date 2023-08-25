@@ -129,6 +129,45 @@ List<AlbumType> Albums = [
     description: "Hits to boost your mood.",
     title: "Happy Hits",
   ),
+   AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "The happiest to boost your day.",
+    title: "Good Times",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "Turn that frown upside down.",
+    title: "Positive Vibes",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "You're on top of the world",
+    title: "Confidence Boost",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "Hits to boost your mood.",
+    title: "Happy Hits",
+  ), AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "The happiest to boost your day.",
+    title: "Good Times",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "Turn that frown upside down.",
+    title: "Positive Vibes",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "You're on top of the world",
+    title: "Confidence Boost",
+  ),
+  AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "Hits to boost your mood.",
+    title: "Happy Hits",
+  ),
 ];
 
 List <AlbumType> Episodes = [
@@ -152,9 +191,89 @@ List <AlbumType> Episodes = [
     description: "Enjoy the free ride",
     title: "Maneuver life",
   ),
+  AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Master yourself thoughts",
+    title: "Mental Health",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast2.jpg",
+    description: "Be free.",
+    title: "Find a way out",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Chillin like a villain",
+    title: "Chill Pod",
+  ),
+   AlbumType(
+    album_cover: "lib/images/car.jpg",
+    description: "Enjoy the free ride",
+    title: "Maneuver life",
+  ),
+  AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Master yourself thoughts",
+    title: "Mental Health",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast2.jpg",
+    description: "Be free.",
+    title: "Find a way out",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Chillin like a villain",
+    title: "Chill Pod",
+  ),
+   AlbumType(
+    album_cover: "lib/images/car.jpg",
+    description: "Enjoy the free ride",
+    title: "Maneuver life",
+  ),
 ];
 
 List <AlbumType> Workout = [
+  AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Master yourself thoughts",
+    title: "Mental Health",
+  ),
+   AlbumType(
+    album_cover: "lib/images/wannabelike.jpg",
+    description: "Be free.",
+    title: "Find a way out",
+  ),
+   AlbumType(
+    album_cover: "lib/images/car.jpg",
+    description: "Chillin like a villain",
+    title: "Chill Pod",
+  ),
+   AlbumType(
+    album_cover: "lib/images/car.jpg",
+    description: "Enjoy the free ride",
+    title: "Maneuver life",
+  ),
+  AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Master yourself thoughts",
+    title: "Mental Health",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast2.jpg",
+    description: "Be free.",
+    title: "Find a way out",
+  ),
+   AlbumType(
+    album_cover: "lib/images/podcast1.jpg",
+    description: "Chillin like a villain",
+    title: "Chill Pod",
+  ),
+   AlbumType(
+    album_cover: "lib/images/car.jpg",
+    description: "Enjoy the free ride",
+    title: "Maneuver life",
+  ),
   AlbumType(
     album_cover: "lib/images/podcast1.jpg",
     description: "Master yourself thoughts",

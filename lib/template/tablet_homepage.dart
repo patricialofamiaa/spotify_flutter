@@ -17,8 +17,10 @@ class _TabletHomePageState extends State<TabletHomePage> {
   final _album = Albums;
   final _episode = Episodes;
   final _workout = Workout;
-  
+
+
   Widget build(BuildContext context) {
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -102,53 +104,123 @@ class _TabletHomePageState extends State<TabletHomePage> {
                   ),
                   //featured cards
                   FeaturedLibrary(),
-                  MoodBlock(title: "Happy", 
-                  list: Expanded(
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
+                  MoodBlock(
+                    title: "Happy",
+                    list: Expanded(
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount:4,
+                        itemBuilder: (context, index) {
+                          return AlbumCard(
+                              title: _album[index].title,
+                              album_cover: _album[index].album_cover,
+                              description: _album[index].description,
+                              onPress: () {});
+                        },
+                      ),
+                    ),
+                    grid: Column(children: [
+                      Expanded(
+                        child: GridView.builder(
                           itemCount: _album.length,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2),
                           itemBuilder: (context, index) {
-                            return AlbumCard(
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: 
+                              AlbumCard(
                                 title: _album[index].title,
                                 album_cover: _album[index].album_cover,
                                 description: _album[index].description,
-                                onPress: () {});
+                                onPress: () {},
+                              ),
+                            );
                           },
                         ),
-                      ),
+                      )
+                    ]),
+
                   ),
-                  MoodBlock(title: "Episodes for you",
+                  MoodBlock(
+                    title: "Episodes for you",
                     list: Expanded(
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 4,
+                        itemBuilder: (context, index) {
+                          return AlbumCard(
+                              title: _episode[index].title,
+                              album_cover: _episode[index].album_cover,
+                              description: _episode[index].description,
+                              onPress: () {});
+                        },
+                      ),
+                    ),
+
+                    grid: Column(children: [
+                      Expanded(
+                        child: GridView.builder(
                           itemCount: _episode.length,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2),
                           itemBuilder: (context, index) {
-                            return AlbumCard(
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: 
+                              AlbumCard(
                                 title: _episode[index].title,
                                 album_cover: _episode[index].album_cover,
                                 description: _episode[index].description,
-                                onPress: () {});
+                                onPress: () {},
+                              ),
+                            );
                           },
                         ),
-                      ),
+                      )
+                    ]),
                   ),
 
-                  MoodBlock(title: "Based on your recent listening",
+                  MoodBlock(
+                    title: "Based on your recent listening",
                     list: Expanded(
-                        child: ListView.builder(
-                          scrollDirection: Axis.horizontal,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 4,
+                        itemBuilder: (context, index) {
+                          return AlbumCard(
+                              title: _workout[index].title,
+                              album_cover: _workout[index].album_cover,
+                              description: _workout[index].description,
+                              onPress: () {});
+                        },
+                      ),
+                    ),
+                     grid: Column(children: [
+                      Expanded(
+                        child: GridView.builder(
                           itemCount: _workout.length,
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2),
                           itemBuilder: (context, index) {
-                            return AlbumCard(
+                            return Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: 
+                              AlbumCard(
                                 title: _workout[index].title,
                                 album_cover: _workout[index].album_cover,
                                 description: _workout[index].description,
-                                onPress: () {});
+                                onPress: () {},
+                              ),
+                            );
                           },
                         ),
-                      ),
+                      )
+                    ]),
                   ),
-                  
                 ],
               ),
             ),

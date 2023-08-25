@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_flutter/molecules/index.dart';
-import 'package:spotify_flutter/pages/index.dart';
 
 class AlbumScreen extends StatelessWidget {
-  const AlbumScreen({super.key});
+  dynamic? child;
+
+  AlbumScreen({this.child});
 
   @override
   Widget build(BuildContext context) {
@@ -16,14 +17,15 @@ class AlbumScreen extends StatelessWidget {
         leading: LeadingIcons(),
       ),
       body: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-            gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Colors.grey.shade700, Colors.black],
-          stops: const [0, 0.3],
-        )),
+          width: double.infinity,
+          decoration: BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [Colors.grey.shade700, Colors.black],
+            stops: const [0, 0.3],
+          )),
+          child: child,
       ),
     );
   }

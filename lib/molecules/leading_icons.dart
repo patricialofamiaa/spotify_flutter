@@ -38,10 +38,11 @@ class LeadingIcons extends StatelessWidget {
             child: InkWell(
               customBorder: const CircleBorder(),
               onTap: () {
-                Navigator.push(
-                  context,
-                    MaterialPageRoute(builder: (context) => AlbumScreen()),           
-                );
+                // Navigator.pop(
+                //   context,
+                //     MaterialPageRoute(builder: (context) => AlbumScreen(),           
+                // ),
+                // );
               } ,
               child: Container(
                 padding: const EdgeInsets.all(6.0),

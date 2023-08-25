@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:spotify_flutter/foundations/index.dart';
+// import 'package:spotify_flutter/foundations/index.dart';
 
 class ResponsiveLayout extends StatelessWidget {
   final Widget desktopLayout;
@@ -11,10 +11,10 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder:(context, constraints) {
-        if(constraints.maxWidth < lg) {
-          return tabletLayout;
-        } else {
+        if(constraints.maxWidth > 800) {
           return desktopLayout;
+        } else {
+          return tabletLayout;
         }
       },
     );
