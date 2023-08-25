@@ -5,12 +5,12 @@ class Sidebar_Button extends StatelessWidget {
   Icon icon;
   dynamic OnPress;
 
-  Sidebar_Button({required this.icon, required this.label, required Function() OnPress, });
+  Sidebar_Button({required this.icon, required this.label, required this.OnPress, });
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: TextButton(onPressed: () => OnPress,
+      child: TextButton(onPressed:() => OnPress,
         child: SizedBox(
           height: 50,
           child: Row(

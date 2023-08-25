@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_flutter/molecules/index.dart';
+import 'package:spotify_flutter/pages/index.dart';
 import 'package:spotify_flutter/tokens/data.dart';
 
 class SideBar extends StatelessWidget {
@@ -8,23 +9,31 @@ class SideBar extends StatelessWidget {
   final _topButtons = TopSideButtons;
   final _playlists = Playlist;
 
+  List pages = [HomePage(), SearchPage()];
+
   @override
   Widget build(BuildContext context) {
     return Container(
         color: Colors.black,
         width: 300,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(0.0),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                 height: 100,
                 child: Expanded(
                   child: ListView.builder(
                     itemCount: _topButtons.length,
                     itemBuilder: (context, index) {
                       return Sidebar_Button(
-                        OnPress: () {},
+                        OnPress: () => {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => _topButtons[index].OnPress,
+                              ))
+                        },
                         icon: _topButtons[index].icon,
                         label: _topButtons[index].label,
                       );
