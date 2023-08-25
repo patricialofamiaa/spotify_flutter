@@ -25,10 +25,7 @@ class _TabletHomePageState extends State<TabletHomePage> {
           backgroundColor: Colors.transparent,
           elevation: 0,
           leadingWidth: 140,
-          leading: LeadingIcons(
-            onTapBack: () {},
-            onTapForward: () {},
-          ),
+          leading: LeadingIcons(),
           actions: [
             InkWell(
               customBorder: const CircleBorder(),

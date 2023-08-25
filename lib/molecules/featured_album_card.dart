@@ -27,7 +27,7 @@ class _AlbumCardState extends State<AlbumCard> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.all(10.0),
                 child: Padding(
                   padding: const EdgeInsets.all(4.0),
                   child: Container(

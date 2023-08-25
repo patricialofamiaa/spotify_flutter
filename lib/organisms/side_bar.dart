@@ -21,8 +21,9 @@ class SideBar extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 100,
+                height: 120,
                 child: Expanded(
+                  flex: 2,
                   child: ListView.builder(
                     itemCount: _topButtons.length,
                     itemBuilder: (context, index) {
@@ -31,7 +32,8 @@ class SideBar extends StatelessWidget {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => _topButtons[index].OnPress,
+                                builder: (context) =>
+                                    _topButtons[index].OnPress,
                               ))
                         },
                         icon: _topButtons[index].icon,

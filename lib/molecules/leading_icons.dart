@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_flutter/pages/home_page.dart';
+import 'package:spotify_flutter/pages/screens/show_all_albums.dart';
 
 class LeadingIcons extends StatelessWidget {
-  dynamic onTapBack;
-  dynamic onTapForward;
- LeadingIcons({required Function() onTapBack, required Function() onTapForward });
+ 
+ LeadingIcons({Key ? key});
 
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return  Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           InkWell(
             customBorder: const CircleBorder(),
-            onTap: () => onTapBack,
+            onTap: () {
+              Navigator.pop(
+                context,
+                MaterialPageRoute(builder:(context) => HomePage(),),
+              );
+            },
             child: Container(
               padding: const EdgeInsets.all(6.0),
               decoration:
@@ -31,7 +37,12 @@ class LeadingIcons extends StatelessWidget {
             padding: const EdgeInsets.only(left: 8.0),
             child: InkWell(
               customBorder: const CircleBorder(),
-              onTap: () => onTapForward,
+              onTap: () {
+                Navigator.push(
+                  context,
+                    MaterialPageRoute(builder: (context) => AlbumScreen()),           
+                );
+              } ,
               child: Container(
                 padding: const EdgeInsets.all(6.0),
                 decoration: BoxDecoration(

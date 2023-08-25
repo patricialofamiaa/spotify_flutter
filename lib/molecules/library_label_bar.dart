@@ -19,7 +19,7 @@ class _LibraryLabelBarState extends State<LibraryLabelBar> {
     final currentWidthScreen = MediaQuery.of(context).size.width;
 
     return Padding(
-      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+      padding: const EdgeInsets.only(top: 8.0, bottom: 10.0),
       child: Expanded(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

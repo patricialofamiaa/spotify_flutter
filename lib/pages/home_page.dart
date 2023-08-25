@@ -26,10 +26,7 @@ class _HomePageState extends State<HomePage> {
           backgroundColor: Colors.transparent,
           elevation: 0,
           leadingWidth: 140,
-          leading: LeadingIcons(
-            onTapBack: () {},
-            onTapForward: () {},
-          ),
+          leading: LeadingIcons(),
           actions: [
             InkWell(
               customBorder: const CircleBorder(),

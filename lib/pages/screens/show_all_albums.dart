@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_flutter/molecules/index.dart';
-import 'package:spotify_flutter/organisms/index.dart';
+import 'package:spotify_flutter/pages/index.dart';
 
 class AlbumScreen extends StatelessWidget {
   const AlbumScreen({super.key});
@@ -13,12 +13,7 @@ class AlbumScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leadingWidth: 140,
-        leading: LeadingIcons(
-          onTapBack: () {
-            Navigator.pop(context);
-          },
-          onTapForward: () {},
-        ),
+        leading: LeadingIcons(),
       ),
       body: Container(
         width: double.infinity,

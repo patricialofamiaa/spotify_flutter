@@ -28,7 +28,7 @@ class _FeaturedCardState extends State<FeaturedCard> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(3),
             child: Container(
-              width: 350,
+              width: 355,
               height: 70,
               decoration: BoxDecoration(
                 color: Colors.grey.shade900,
@@ -61,6 +61,7 @@ class _FeaturedCardState extends State<FeaturedCard> {
                       fontSize: 12,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
+                      overflow: TextOverflow.ellipsis,
                     ),
                     ),
                   )
